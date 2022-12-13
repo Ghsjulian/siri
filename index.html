@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/w3.css">
+<script src="js/speech_speak.js"></script>
+<script src="js/voice_recognition.js"></script>
+<script src="js/commands.js"></script>
+  <title>S I R I Virtual Assistant</title>
+</head>
+<body>
+  <br><br>
+  <center>
+    <div align="center" class="semi_arc e6">
+      <div class="semi_arc_3 e5_1">
+        <div class="semi_arc_3 e5_2">
+          <div class="semi_arc_3 e5_3">
+            <div class="semi_arc_3 e5_4">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="core2">SIRI</div>
+    </div>
+  <div class="output__"></div>
+  <div class="siri"></div>
+  </center>
+
+<!--
+<button onclick="open_devoloper_window()" class="w3-btn w3-green w3-large">Login</button>-->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-12 w3-animate-zoom" style="max-width:600px">
+     <center>
+     <img src="images/ghs3.png">
+       <h2> Ghs Julian</h2>
+       <strong>Web Developer & Designer </strong>
+    </center>
+  </div>
+</div>
+<script>
+function open_devoloper_window() {
+    document.getElementById('id01').style.display='block';
+}
+function close_devoloper_window() {
+  document.getElementById('id01').style.display='none';
+}
+
+
+
+recognition.addEventListener("end", () => {
+    recognition.start();
+});
+window.onload = ()=>{
+  speakFunction("I'm online , please ask something");
+}
+recognition.start();
+</script>
+</body>
+</html>
